@@ -677,7 +677,10 @@ strong {
   font-size: 28px;
   font-weight: normal;
   color: deeppink;
+}
 
+.service-padding{
+  padding: 40px;
 }
 
 /*---------------------------------------
@@ -770,6 +773,19 @@ strong {
 -----------------------------------------*/
 .border-rad{
   border-radius: 10px;
+}
+
+
+/*---------------------------------------
+  FOOTER               
+-----------------------------------------*/
+
+.add-text{
+  font-size: 24px;
+}
+
+.margin-footer{
+  margin-right: 20px;
 }
 
 /*---------------------------------------
