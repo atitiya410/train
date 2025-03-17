@@ -710,6 +710,14 @@ strong {
   font-size: 22px;
 }
 
+.size-photo{
+  width: 250px; 
+  height: 370px;
+}
+
+.padding-name{
+  padding: 20px;
+}
 
 /*---------------------------------------
   CALENDAR              
@@ -810,6 +818,17 @@ strong {
 .copyright-text {
   color: rgba(255, 255, 255, 0.45);
   font-size: var(--copyright-text-font-size);
+}
+
+.background-footer{
+  background: linear-gradient(45deg, #aa86ce, #e0bfee); 
+  padding: 10px;
+}
+
+.logo-footer{
+  width: 40px; 
+  height: 40px; 
+  margin-right: 15px;
 }
 
 /*---------------------------------------
