@@ -238,7 +238,7 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {  
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -611,6 +611,15 @@ strong {
 }
 
 /*---------------------------------------
+  FONT TRAINING RMUTL        
+-----------------------------------------*/
+.font-train{
+  font-size: 22px;
+  font-weight: normal;
+  color: #841988 !important;
+}
+
+/*---------------------------------------
   ABOUT        
 -----------------------------------------*/
 .about-p{
@@ -642,6 +651,15 @@ strong {
 .background-standard {
   background: linear-gradient(45deg, #aa86ce, #e0bfee); /* สีไล่ระดับ */
  
+}
+
+
+/* สำหรับภาพแนวนอน */
+.img-horizontal {
+  width: 100%;
+  height: 300px;       /* ความสูงน้อยลง เหมาะกับภาพแนวนอน */
+  object-fit: cover; /* หรือใช้ contain ได้ ขึ้นอยู่กับที่ต้องการ */
+  display: block;
 }
 
 
@@ -724,8 +742,8 @@ strong {
 -----------------------------------------*/
 .calendar-box {
   width: 100%;          /* ให้ calendar-box กว้างเต็มที่ */
-  max-width: 1200px;      /* กำหนดความกว้างสูงสุดของกรอบ (สามารถปรับได้) */
-  height: 600px;        /* กำหนดความสูงขั้นต่ำให้ calendar-box */
+  max-width: 1000px;      /* กำหนดความกว้างสูงสุดของกรอบ (สามารถปรับได้) */
+  height: 500px;        /* กำหนดความสูงขั้นต่ำให้ calendar-box */
   border: 2px solid #ccc; /* ใส่กรอบให้ calendar-box */
   border-radius: 12px;   /* ทำให้ขอบของ calendar-box โค้งมน */
   overflow: hidden;     /* ป้องกันเนื้อหาภายในไม่ให้เกินขอบกรอบ */
