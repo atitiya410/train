@@ -654,6 +654,72 @@ strong {
 }
 
 
+
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.certificate {
+  flex: 1 1 calc(33.333% - 20px); /* 3 ช่อง หักช่องว่างออก */
+  background-color: white;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.certificate_1 {
+  flex: 1 1 calc(33.333% - 20px); /* 3 ช่อง หักช่องว่างออก */
+  background-color: white;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.certificate h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .certificate {
+    flex: 1 1 100%;
+  }
+}
+
+.cer-height{
+  margin-bottom: 20px;
+}
+
+.text-cer{
+  font-size: 15px;
+}
+
+.empty-box {
+  visibility: hidden;
+}
+
+
 /* สำหรับภาพแนวนอน */
 .img-horizontal {
   width: 100%;
@@ -661,6 +727,26 @@ strong {
   object-fit: cover; /* หรือใช้ contain ได้ ขึ้นอยู่กับที่ต้องการ */
   display: block;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-vertical {
+  max-height: 400px; /* หรือปรับตามความเหมาะสม */
+  object-fit: contain; /* รักษาสัดส่วน ไม่เบี้ยว */
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 0.5rem; /* 8px */
+}
+
+
+
+
 
 
 /*---------------------------------------
@@ -678,6 +764,10 @@ strong {
   margin-right: 15px; /* เพิ่มระยะห่างจากคอลัมน์ขวา */
 }
 
+.project-textstatus{
+  font-size: 14px;
+  color: #fcfeff;
+}
 /*---------------------------------------
   Training Room        
 -----------------------------------------*/
@@ -715,6 +805,7 @@ strong {
 .pad-text{
     font-size: 16px;
     color: #0f1316;
+    text-align: center;
 }
   
 
@@ -731,6 +822,7 @@ strong {
 .size-photo{
   width: 250px; 
   height: 370px;
+  
 }
 
 .padding-name{
@@ -780,18 +872,25 @@ strong {
    MAP            
 -----------------------------------------*/
 
+
+
 .map-container {
-  width: 100%;                /* กำหนดให้แผนที่มีความกว้างเต็มคอลัมน์ */
-  max-width: 900px;           /* กำหนดความกว้างสูงสุดของแผนที่ */
-  height: 500px;              /* กำหนดความสูงของแผนที่ */
-  margin: 0 auto;             /* จัดแผนที่ให้อยู่กลางหน้าจอ */
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .map-container iframe {
-  width: 100%;                /* ให้ iframe กว้างเต็มพื้นที่ของกรอบ */
-  height: 100%;               /* ให้ iframe สูงเต็มกรอบ */
-  border: 0;                  /* ไม่มีขอบ */
-  border-radius: 10px;        /* ให้มุมกรอบโค้งมน */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /*---------------------------------------
