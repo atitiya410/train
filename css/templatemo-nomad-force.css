@@ -626,6 +626,13 @@ strong {
   font-size: 22px;
   font-weight: normal;
   color: #353131
+
+}
+
+.about-p-text{
+  font-size: 19px;
+  font-weight: normal;
+  color: #424040
 }
 
 
@@ -660,6 +667,13 @@ strong {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+}
+
+.certificate-container_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวดิ่ง */
+  gap: 2rem; /* ระยะห่างระหว่างแต่ละกรอบ */
 }
 
 .certificate {
@@ -767,6 +781,11 @@ strong {
 .project-textstatus{
   font-size: 14px;
   color: #fcfeff;
+}
+
+.project-text{
+  font-size: 20px;
+  color:#202020;
 }
 /*---------------------------------------
   Training Room        
